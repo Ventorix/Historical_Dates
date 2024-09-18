@@ -1,0 +1,42 @@
+@import "./reset";
+@import "./variables/global";
+@import "./themes/light";
+
+body {
+  font: var(--font-m);
+  color: var(--text);
+}
+
+.app {
+  background-color: var(--bg);
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  width: calc(100vw - 383px - 243px);
+  min-height: 100vh;
+  margin-left: 383px;
+  margin-right: 243px;
+}
+
+.content-box {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  border-left: 1px solid var(--text);
+  border-right: 1px solid var(--text);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 177px;
+    width: 5px;
+    height: 120px;
+    background: var(--gradient);
+  }
+}
+
+// *::-webkit-scrollbar {
+//   width: 12px;
+//   height: 8px;
+// }

@@ -1,0 +1,8 @@
+:root,
+.app_theme {
+    --bg: #f4f5f9;
+    --text: #42567a;
+    --accent-blue: #3877ee;
+    --accent-pink: #ef5da8;
+    --gradient: linear-gradient(180deg, var(--accent-blue) -5%, var(--accent-pink) 85%);
+}
